@@ -84,7 +84,7 @@ li::before {
 }
 
 
-.Instrucciones, .Objetivo {
+.Instrucciones, .Objetivo, .ultimoMov {
   background-color: #E1244F;
   color: white;
   cursor: pointer;
@@ -97,11 +97,11 @@ li::before {
   font-size: 15px;
 }
 
-.active, .Instruccines:hover, .Objetivo:hover {
+.active, .Instruccines:hover, .Objetivo:hover, .ultimoMov:hover {
   background-color: #E1244F;
 }
 
-.Instrucciones:after, .Objetivo:after {
+.Instrucciones:after, .Objetivo:after, .ultimoMov:after {
   content: '\002B';
   color: white;
   font-weight: bold;
@@ -123,4 +123,40 @@ li::before {
 
 #imagenFinal {
   width: 60%
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto; 
+    padding: 20px;
+    border: none;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+    font-family: 'Sedgwick Ave', cursive; 
+}
+
+.modal-content img {
+  width: 80%;
+}
+
+#botonJugar {
+  background-color: #E1244F;
+  color: white;
+  padding: 18px;
+  border: none;
+  outline: none;
+  font-size: 15px;
 }

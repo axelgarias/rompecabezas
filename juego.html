@@ -4,55 +4,69 @@
     <meta charset="utf-8">
     <title>BMO Arcade</title>
     <link rel="stylesheet" href="css/juego.css">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
   </head>
   <body>
-    <div class="col-40">
-    
-      <div id="titulo">
-        <img src="images/logo.png">
-      </div>
-
-      <div id="instrucciones">
-        <button class="Instrucciones">Instrucciones</button>
-          <div class="contenido">
-              <ul id="lista-instrucciones">
-                <li>Muevete con las flechas de tu teclado.</li>
-                <li>Completa el rompecabezas para formar a BMO.</li>
-                <li>La pieza faltante debera ser la inferior derecha.</li>
-              </ul>
-          </div>
-      </div>
-      <div id="objetivo">
-        <button class="Objetivo">Objetivo</button>
-          <div class="contenido">
-            <img id="imagenFinal" src="images/final.png">
-          </div> 
-      </div>
-      
-      <div id="ultimo-mov">
-        <p>Ultimo Movimiento</p>
-        <div id="flecha" class="texto-centrado">
-          
+    <div class="container">  
+      <div class="col-40">
+        <div id="titulo">
+          <img src="images/logo.png">
         </div>
+
+        <div>
+          <button class="desplegable Instrucciones">Instrucciones</button>
+            <div class="contenido">
+                <ul id="lista-instrucciones">
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+          <button class="desplegable Objetivo">Objetivo</button>
+            <div class="contenido">
+              <p>Tu puzzle tiene que quedar de esta manera</p>
+              <img id="imagenFinal" src="images/final.png">
+            </div> 
+        </div>
+        
+        <div id="ultimo-mov">
+          <button class="desplegable ultimoMov">Ultimo Movimiento</button>
+          <div class="contenido">
+          <div id="flecha" class="texto-centrado">
+           
+          </div>
+          </div>
+        </div> 
       </div>
       
-    </div>
-    <div class="col-60">
-      <div id="juego">
-        <div id="pieza1"><img class="pieza-rompecabezas" src="images/10.jpg" alt="pieza1"></div>
-        <div id="pieza2"><img class="pieza-rompecabezas" src="images/20.jpg" alt="pieza2"></div>
-        <div id="pieza3"><img class="pieza-rompecabezas" src="images/30.jpg" alt="pieza3"></div>
-        <div id="pieza4"><img class="pieza-rompecabezas" src="images/40.jpg" alt="pieza4"></div>
-        <div id="pieza5"><img class="pieza-rompecabezas" src="images/50.jpg" alt="pieza5"></div>
-        <div id="pieza6"><img class="pieza-rompecabezas" src="images/60.jpg" alt="pieza6"></div>
-        <div id="pieza7"><img class="pieza-rompecabezas" src="images/70.jpg" alt="pieza7"></div>
-        <div id="pieza8"><img class="pieza-rompecabezas" src="images/80.jpg" alt="pieza8"></div>
-        <div id="pieza9" class="pieza-rompecabezas"></div>
-      </div>              
-    </div>
-    <div id="footer">
+      <div class="col-60">
+        <div id="juego">
+          <div id="pieza1"><img class="pieza-rompecabezas" src="images/10.jpg" alt="pieza1"></div>
+          <div id="pieza2"><img class="pieza-rompecabezas" src="images/20.jpg" alt="pieza2"></div>
+          <div id="pieza3"><img class="pieza-rompecabezas" src="images/30.jpg" alt="pieza3"></div>
+          <div id="pieza4"><img class="pieza-rompecabezas" src="images/40.jpg" alt="pieza4"></div>
+          <div id="pieza5"><img class="pieza-rompecabezas" src="images/50.jpg" alt="pieza5"></div>
+          <div id="pieza6"><img class="pieza-rompecabezas" src="images/60.jpg" alt="pieza6"></div>
+          <div id="pieza7"><img class="pieza-rompecabezas" src="images/70.jpg" alt="pieza7"></div>
+          <div id="pieza8"><img class="pieza-rompecabezas" src="images/80.jpg" alt="pieza8"></div>
+          <div id="pieza9" class="pieza-rompecabezas"></div>
+        </div>
+
+        <div class="alertaGanadora">
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <p>¿Quién es genial? ¡Tu lo eres!</p>
+              <p>Ganaste</p>
+              <img src="images/jake.gif">
+              <button id="botonJugar" type="button" onclick="volverAJugar()">Volver a jugar</button>
+            </div>
+          </div>          
+        </div>              
+      </div>
       
-    </div>
-    <script src="js/juego.js"></script>
+      <div id="footer">  
+      </div>
+  </div>     
+      <script src="js/juego.js"></script>
   </body>
 </html>
