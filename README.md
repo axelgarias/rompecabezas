@@ -1,2 +1,2 @@
-# rompecabezas
-Acamica Rompecabezas
+# Rompecabezas
+Juego rompecabezas
